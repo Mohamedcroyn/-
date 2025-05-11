@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blox Fruits Tips</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #222;
+      color: white;
+      padding: 15px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>How to Level Up Fast in Blox Fruits</h1>
+  <p>"Grind in the right zones, focus on quests, and use 2x XP wisely!"</p>
+
+  <div id="cookie-banner">
+    <p>This website uses cookies to enhance your experience.</p>
+    <button onclick="acceptCookies()">Accept</button>
+    <button onclick="declineCookies()">Decline</button>
+  </div>
+
+  <script>
+    function acceptCookies() {
+      document.cookie = "cookiesAccepted=true; path=/; expires=Fri, 31 Dec 2025 23:59:59 UTC";
+      document.getElementById("cookie-banner").style.display = "none";
+    }
+
+    function declineCookies() {
+      alert("You must accept cookies to view the content.");
+      window.location.href = "https://google.com"; // يخرج المستخدم
+    }
+  </script>
+</body>
+</html>
